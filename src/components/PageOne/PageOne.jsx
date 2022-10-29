@@ -8,6 +8,11 @@ import { useHistory } from "react-router-dom";
 function PageOne(){
     console.log('on page one: How are you feeling?');
 
+    //dispatch const and history const
+
+    const dispatch=useDispatch();
+    const history=useHistory();
+
     //onSubmit function to capture form value and histor.push
 
     const onSubmit = (evt) => {
@@ -15,11 +20,14 @@ function PageOne(){
         evt.preventDefault();
         console.log('in onSubmit and value is:', evt.target.feedback.value);
 
-
-        //history.push
-
-
-            
+        //dispatch value to redux
+        dispatch({
+            type: 'ADD_KEY',
+            //send object with key and spread to use same type multiple times
+            payload: {feeling: evt.target.feedback.value},
+        });
+        //go to page two
+        history.push('/2');
     }
 
 
@@ -34,7 +42,7 @@ function PageOne(){
             </section>
             <section>
                 <p>How are you feeling today?</p>
-                <form onSubmit={onSubmit}>
+                <form className="feedbackForm" onSubmit={onSubmit}>
                     <div className="scaleValue">
                     <p >Not well at all</p>
                         <input type="radio" name="feedback" className="valueRadio" value="1"></input>

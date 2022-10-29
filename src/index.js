@@ -9,12 +9,14 @@ import logger from 'redux-logger';
 
 // Reducer ⬇️
 
-const feedback = (state = {
-    feelings: 5,
-    understanding: 5,
-    support: 5,
-    comments: 'I love this stuff'
-}, action) => {
+const feedback = (state = {}, action) => {
+    switch(action.type){
+        // All keys follow this type!
+        case 'ADD_KEY':
+                    // spread state (i.e) feeling: 1
+                                //spread payload i.e. : understanding: 2
+            return {...state, ...action.payload}; // new state {feeling:1, understanding: 3}
+    }
     return state;
 }
 
