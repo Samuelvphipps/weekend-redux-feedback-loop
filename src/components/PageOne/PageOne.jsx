@@ -24,7 +24,7 @@ function PageOne(){
         dispatch({
             type: 'ADD_KEY',
             //send object with key and spread to use same type multiple times
-            payload: {feeling: evt.target.feedback.value},
+            payload: {feeling: Number(evt.target.feedback.value)},
         });
         //go to page two
         history.push('/2');
@@ -44,7 +44,7 @@ function PageOne(){
                 <p>How are you feeling today?</p>
                 <form className="feedbackForm" onSubmit={onSubmit}>
                     <div className="scaleValue">
-                    <p >Not well at all</p>
+                        <p >Not well at all</p>
                         <input type="radio" name="feedback" className="valueRadio" value="1"></input>
                         <input type="radio" name="feedback" className="valueRadio" value="2"></input>
                         <input type="radio" name="feedback" className="valueRadio" value="3"></input>

@@ -23,7 +23,7 @@ function PageTwo(){
         dispatch({
             type: 'ADD_KEY',
                         //send object with key and spread to use same type multiple times
-            payload: {understanding: evt.target.feedback.value},
+            payload: {understanding: Number(evt.target.feedback.value)},
         });
 
         //link to page 3
@@ -44,7 +44,7 @@ function PageTwo(){
                 <p>How well are you understanding the content?</p>
                 <form className="feedbackForm" onSubmit={onSubmit}>
                     <div className="scaleValue">
-                    <p >Not well at all</p>
+                        <p >Not well at all</p>
                         <input type="radio" name="feedback" className="valueRadio" value="1"></input>
                         <input type="radio" name="feedback" className="valueRadio" value="2"></input>
                         <input type="radio" name="feedback" className="valueRadio" value="3"></input>
