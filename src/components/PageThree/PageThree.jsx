@@ -2,7 +2,7 @@
 import { useDispatch } from 'react-redux';
 import { useHistory } from "react-router-dom";
 
-// on submit (history.push) (dispatch)
+
 
 function PageThree(){
 
@@ -10,8 +10,9 @@ function PageThree(){
 
     const dispatch=useDispatch();
     const history=useHistory();
-    //onSubmit function to capture form value and histor.push
 
+    //onSubmit function to capture form value and histor.push
+    // on submit (history.push) (dispatch)
     const onSubmit = (evt) => {
         // prevent reload
         evt.preventDefault();

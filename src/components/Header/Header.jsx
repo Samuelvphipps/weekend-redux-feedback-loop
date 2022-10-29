@@ -1,7 +1,7 @@
 import './Header.css'
 
 function Header(){
-
+        //Whole app header
     return(
         <div className='App'>
             <header className='App-header'>

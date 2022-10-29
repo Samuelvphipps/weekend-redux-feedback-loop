@@ -37,7 +37,6 @@ function Submit(){
 
     return(
         // Returning page format
-        //Eventually try sweet alerts
         <article name="reviewPage" className="feedbackContainer">
             <section name="location">
                 <p className="pageState">Review Your Feedback!</p>

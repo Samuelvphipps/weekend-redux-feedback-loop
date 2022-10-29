@@ -44,6 +44,8 @@ function PageOne(){
                         <p>How are you feeling today?</p>
                         <div className="scaleValue">
                             <p >Not well at all</p>
+                            {/* I used radios for each page because it seemed 
+                            more user friendly than a text field with max/min values */}
                             <input required type="radio" name="feedback" className="valueRadio" value="1"></input>
                             <input required type="radio" name="feedback" className="valueRadio" value="2"></input>
                             <input required type="radio" name="feedback" className="valueRadio" value="3"></input>

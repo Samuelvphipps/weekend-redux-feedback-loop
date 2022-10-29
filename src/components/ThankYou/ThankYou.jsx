@@ -11,12 +11,12 @@ function ThankYou(){
 
     function onSubmit(){
         console.log('in onSubmit');
-        //reset state
+        //reset state to {} in redux
         dispatch({
             type: 'RESET',
             payload:{}
         });
-
+        //go back to the beginning
     history.push('/');
         
     }

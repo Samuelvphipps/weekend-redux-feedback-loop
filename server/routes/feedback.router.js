@@ -5,7 +5,7 @@ const pool = require('../modules/pool');
 
 
 router.post('/', (req, res) => {
-    //assign newFeedBack
+    //assign newFeedBack the payload
     let newFeedback = req.body;
     console.log('Adding feedback', newFeedback);
     //assign sql text and params
