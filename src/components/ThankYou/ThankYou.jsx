@@ -1,7 +1,6 @@
 import { useDispatch } from 'react-redux';
 import { useHistory } from "react-router-dom";
 
-import Header from "../Header/Header";
 
 // on submit (history.push), empty redux in case of error.
 

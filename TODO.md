@@ -13,13 +13,7 @@ DATA
 
 
 FEATURES
-[ ] form info should be validated (not comments)
+[ X] form info should be validated (not comments)
 [ X] review feedback info and submit
     [ X]Save submission to database
 
-
-STRETCH
-
-[ ] admin page
-    [ ] view all submissions
-    [ ] flag submissions

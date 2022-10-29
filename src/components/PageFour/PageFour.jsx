@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+
 import { useDispatch } from 'react-redux';
 import { useHistory } from "react-router-dom";
 
@@ -39,7 +39,7 @@ const onSubmit = (evt) => {
                 <form onSubmit={onSubmit}>
                 <div className="inputContainer">
                     <p>Any comments you want to leave?</p>
-                    <textarea required type="text" name="comments" placeholder="Comments"></textarea>
+                    <textarea type="text" name="comments" placeholder="Comments"></textarea>
                 </div>
                     <div className="buttonBar">
                         <button className="nextBtn" type="submit">Next</button>
