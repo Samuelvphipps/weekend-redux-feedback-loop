@@ -35,7 +35,7 @@ function PageTwo(){
         // Returning page format
         <>
         <Header />
-         <article>
+         <article className="feedbackContainer">
             <section name="Location">
                 <p className="pageState">2 of 4 pages</p>
                 <div className="locationBar"></div>

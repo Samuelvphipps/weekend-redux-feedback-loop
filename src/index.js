@@ -16,6 +16,9 @@ const feedback = (state = {}, action) => {
                     // spread state (i.e) feeling: 1
                                 //spread payload i.e. : understanding: 2
             return {...state, ...action.payload}; // new state {feeling:1, understanding: 3}
+        case 'RESET':
+            //reset to empty state (to be safe)
+            return action.payload;
     }
     return state;
 }
