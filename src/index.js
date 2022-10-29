@@ -11,7 +11,7 @@ import logger from 'redux-logger';
 
 const feedback = (state = {}, action) => {
     switch(action.type){
-        // All keys follow this type!
+        // All object keys follow this type
         case 'ADD_KEY':
                     // spread state (i.e) feeling: 1
                                 //spread payload i.e. : understanding: 2
