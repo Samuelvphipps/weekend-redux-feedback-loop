@@ -47,7 +47,7 @@ function Submit(){
                 <p>Feeling: {feedback.feeling}</p>
                 <p>Understanding: {feedback.understanding}</p>
                 <p>Support: {feedback.support}</p>
-                <p>Comments: {feedback.comments}.</p>
+                <p>Comments: {feedback.comments}</p>
             </div>
             {/* sends data  */}
             <div className="buttonBar">

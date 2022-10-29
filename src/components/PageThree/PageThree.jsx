@@ -41,7 +41,7 @@ function PageThree(){
             <section>
                 <form className="feedbackForm" onSubmit={onSubmit}>
                     <div className="inputContainer">
-                        <p>How well are you being supported</p>
+                        <p>How well are you being supported?</p>
                         <div className="scaleValue">
                             <p >Not well at all</p>
                             <input required type="radio" name="feedback" className="valueRadio" value="1"></input>
