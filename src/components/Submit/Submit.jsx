@@ -1,7 +1,6 @@
-import { useState, useEffect } from 'react';
-import { useSelector, useDispatch } from 'react-redux';
+import { useSelector} from 'react-redux';
 import { useHistory } from "react-router-dom";
-
+import axios from 'axios';
 // on submit (history.push) (dispatch)
 
 
@@ -13,6 +12,25 @@ function Submit(){
     //check for data
     console.log('feedback', feedback);
 
+    //onsubmit to send to DB
+
+    const onSubmit = ()=>{
+        console.log('in onSubmit')
+        //axios post request
+        axios({
+            method: 'POST',
+            url: '/feedback',
+            data: feedback,
+        })
+            .then((response)=>{
+                console.log(response);
+            })
+            .catch((err)=>{
+                console.error('POST /feedback error', err);
+            });
+
+    }
+
     return(
         // Returning page format
         //Eventually try sweet alerts
@@ -23,7 +41,7 @@ function Submit(){
             <p>Support: {feedback.support}</p>
             <p>Comments: {feedback.comments}.</p>
             {/* sends data  */}
-            <button>Submit</button>
+            <button onClick={onSubmit}>Submit</button>
         </article>
     )
 };
