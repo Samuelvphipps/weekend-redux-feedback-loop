@@ -38,4 +38,8 @@ if (process.env.DATABASE_URL) {
     };
 }
 
+pool.on('connect', () => {
+    console.log('Postgesql connected');
+  });
+
 module.exports = new pg.Pool(config);

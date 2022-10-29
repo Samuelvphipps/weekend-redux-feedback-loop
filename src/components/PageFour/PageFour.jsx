@@ -23,7 +23,7 @@ const onSubmit = (evt) => {
     });
 
     //link to page review
-    // history.push('/4'); 
+    history.push('/4'); 
 };
 
     return (
