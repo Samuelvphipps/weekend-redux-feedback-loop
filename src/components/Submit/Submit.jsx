@@ -5,7 +5,11 @@ import { useHistory } from "react-router-dom";
 // on submit (history.push) (dispatch)
 
 
+
+
 function Submit(){
+
+    const feedback = useSelector(store => store.feedback)
 
     return(
         // Returning page format

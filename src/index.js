@@ -9,7 +9,12 @@ import logger from 'redux-logger';
 
 // Reducer ⬇️
 
-const feedback = (state = {}, action) => {
+const feedback = (state = {
+    feelings: 5,
+    understanding: 5,
+    support: 5,
+    comments: 'I love this stuff'
+}, action) => {
     return state;
 }
 

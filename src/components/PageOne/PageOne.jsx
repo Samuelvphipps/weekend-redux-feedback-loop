@@ -7,24 +7,50 @@ import { useHistory } from "react-router-dom";
 
 function PageOne(){
     console.log('on page one: How are you feeling?');
+
+    //onSubmit function to capture form value and histor.push
+
+    const onSubmit = (evt) => {
+        // prevent reload
+        evt.preventDefault();
+        console.log('in onSubmit and value is:', evt.target.feedback.value);
+
+
+        //history.push
+
+
+            
+    }
+
+
     return (
         // Returning page format
+        <>
+        <Header />
          <article>
             <section name="Location">
                 <p className="pageState">1 of 4 pages</p>
                 <div className="locationBar"></div>
             </section>
             <section>
-                <form>
-                    <p>How are you feeling today?</p>
-                    <input placeholder="1-5" type="number" max="5" min="1"></input>
+                <p>How are you feeling today?</p>
+                <form onSubmit={onSubmit}>
+                    <div className="scaleValue">
+                    <p >Not well at all</p>
+                        <input type="radio" name="feedback" className="valueRadio" value="1"></input>
+                        <input type="radio" name="feedback" className="valueRadio" value="2"></input>
+                        <input type="radio" name="feedback" className="valueRadio" value="3"></input>
+                        <input type="radio" name="feedback" className="valueRadio" value="4"></input>
+                        <input type="radio" name="feedback" className="valueRadio" value="5"></input>
+                        <p >Extremely well</p>
+                    </div>
                     <div className="buttonBar">
                         <button type="submit"> next</button>
                     </div>
                 </form>
             </section>
          </article>
-        
+         </>
     )
 }
 
