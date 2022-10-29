@@ -112,7 +112,11 @@ body {
 
 textarea{
   height: 60%;
-  width: 99%;
+  width: 97%;
+  resize:none;
+  font-size: 16px;
+  font-family: 'Playfair Display', serif;
+  padding: 6px;
 }
 
 .thankYouContainer>p {
