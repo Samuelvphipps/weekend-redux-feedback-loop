@@ -26,7 +26,7 @@ function PageThree(){
         });
 
         //link to page 4
-        // history.push('/4'); 
+        history.push('/4'); 
     };
 
 
