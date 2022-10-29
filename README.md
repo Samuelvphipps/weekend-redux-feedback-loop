@@ -1,17 +1,13 @@
 
 
-# PROJECT NAME
-Weekend-Redux-Feedback-Loop
+# Weekend-Redux-Feedback-Loop
+
 ## Description
 
     Duration: 10 hours
 
 This project is a form intended to provide feedback to the administrator. This project was really enjoyable. I decided to pass info to only one reducer by sending an object that got spread in the redux reducer. I think this made the process much easier as I could cut and past my page info to the next page. This also simplified the styling. Were I to do this again I would have sketched out my styling before writing the html frames.
 
-
-## Screen Shot
-
-![Image of comments page](/screenshot.png "Screenshot")
 
 ### Prerequisites
 
