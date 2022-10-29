@@ -1,0 +1,12 @@
+.App {
+    text-align: center;
+  }
+  
+  .App-header {
+    max-width: 500px;
+    margin: 29px auto;
+    padding: 10px;
+    box-shadow: 4px 5px 33px #d2d1d1;
+    font-weight: 800;
+  }
+

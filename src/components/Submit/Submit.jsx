@@ -38,7 +38,7 @@ function Submit(){
     return(
         // Returning page format
         //Eventually try sweet alerts
-        <article name="reviewPage">
+        <article name="reviewPage" id="submitContainer">
             <h1>Review Your Feedback</h1>
             <p>Feeling: {feedback.feeling}</p>
             <p>Understanding: {feedback.understanding}</p>

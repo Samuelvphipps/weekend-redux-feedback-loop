@@ -34,7 +34,7 @@ function PageThree(){
         // Returning page format
         <>
         <Header />
-         <article>
+         <article className="feedbackContainer">
             <section name="Location">
                 <p className="pageState">3 of 4 pages</p>
                 <div className="locationBar"></div>

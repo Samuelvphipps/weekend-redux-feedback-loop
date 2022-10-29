@@ -24,10 +24,10 @@ function ThankYou(){
 
 
     return (
-        <>
+        <div className='thankYouContainer'>
             <h1>Thank You</h1>
             <button className="leaveNewFeedback" onClick={onSubmit}>Leave New Feedback</button>
-        </>
+        </div>
     )
 };
 

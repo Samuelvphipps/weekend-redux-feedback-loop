@@ -30,7 +30,7 @@ const onSubmit = (evt) => {
     return (
 
         // Returning page format
-        <article>
+        <article className="feedbackContainer">
             <section name="Location">
                 <p className="pageState">4 of 4 pages</p>
                 <div className="locationBar"></div>
