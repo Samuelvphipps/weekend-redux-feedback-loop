@@ -2,21 +2,20 @@
 SETUP
 [X]Routes
 [X]Components
-[ ]Html frames
+[ X]Html frames
 [ ]
 
 DATA
-[ ] Reducers
-    [ ]Form data reducer as '{ feeling: , understanding: , support: , comments: }'
-        [ ] case for each
+[ X] Reducers
+    [ X]Form data reducer as '{ feeling: , understanding: , support: , comments: }'
 
-[ ] POST ROUTE TO DB
+[ x] POST ROUTE TO DB
 
 
 FEATURES
 [ ] form info should be validated (not comments)
-[ ] review feedback info and submit
-    [ ]Save submission to database
+[ X] review feedback info and submit
+    [ X]Save submission to database
 
 
 STRETCH
