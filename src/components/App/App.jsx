@@ -13,6 +13,7 @@ import PageFour from '../PageFour/PageFour';
 import Submit from '../Submit/Submit';
 import ThankYou from '../ThankYou/ThankYou';
 import Admin from '../Admin/Admin';
+import Header from '../Header/Header';
 
 
 
@@ -20,7 +21,7 @@ function App() {
 
   return (
     <Router >
-
+      <Header />
     {/* todo page one */}
     <Route path='/' exact>
       <PageOne />

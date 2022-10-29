@@ -30,18 +30,21 @@ const onSubmit = (evt) => {
     return (
 
         // Returning page format
-        <article>
+        <article className="feedbackContainer">
             <section name="Location">
                 <p className="pageState">4 of 4 pages</p>
                 <div className="locationBar"></div>
             </section>
             <section>
                 <form onSubmit={onSubmit}>
+                <div className="inputContainer">
                     <p>Any comments you want to leave?</p>
-                    <input type="text" name="comments" placeholder="Comments"></input>
+                    <textarea required type="text" name="comments" placeholder="Comments"></textarea>
+                </div>
                     <div className="buttonBar">
-                        <button type="submit"> next</button>
+                        <button className="nextBtn" type="submit">Next</button>
                     </div>
+                
                 </form>
             </section>
          </article>

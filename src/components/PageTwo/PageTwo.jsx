@@ -34,26 +34,27 @@ function PageTwo(){
     return (
         // Returning page format
         <>
-        <Header />
          <article className="feedbackContainer">
             <section name="Location">
                 <p className="pageState">2 of 4 pages</p>
                 <div className="locationBar"></div>
             </section>
             <section>
-                <p>How well are you understanding the content?</p>
                 <form className="feedbackForm" onSubmit={onSubmit}>
-                    <div className="scaleValue">
-                        <p >Not well at all</p>
-                        <input type="radio" name="feedback" className="valueRadio" value="1"></input>
-                        <input type="radio" name="feedback" className="valueRadio" value="2"></input>
-                        <input type="radio" name="feedback" className="valueRadio" value="3"></input>
-                        <input type="radio" name="feedback" className="valueRadio" value="4"></input>
-                        <input type="radio" name="feedback" className="valueRadio" value="5"></input>
-                        <p >Extremely well</p>
+                    <div className="inputContainer">
+                        <p>How well are you understanding the content?</p>
+                        <div className="scaleValue">
+                            <p >Not well at all</p>
+                            <input required type="radio" name="feedback" className="valueRadio" value="1"></input>
+                            <input required type="radio" name="feedback" className="valueRadio" value="2"></input>
+                            <input required type="radio" name="feedback" className="valueRadio" value="3"></input>
+                            <input required type="radio" name="feedback" className="valueRadio" value="4"></input>
+                            <input required type="radio" name="feedback" className="valueRadio" value="5"></input>
+                            <p >Extremely well</p>
+                        </div>
                     </div>
                     <div className="buttonBar">
-                        <button type="submit"> next</button>
+                        <button className="nextBtn" type="submit">Next</button>
                     </div>
                 </form>
             </section>

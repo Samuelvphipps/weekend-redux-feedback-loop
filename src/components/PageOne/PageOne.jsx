@@ -34,26 +34,27 @@ function PageOne(){
     return (
         // Returning page format
         <>
-        <Header />
          <article className="feedbackContainer">
-            <section name="Location">
+            <section name="location">
                 <p className="pageState">1 of 4 pages</p>
                 <div className="locationBar"></div>
             </section>
-            <section>
-                <p>How are you feeling today?</p>
+            <section className="formContainer">
                 <form className="feedbackForm" onSubmit={onSubmit}>
-                    <div className="scaleValue">
-                        <p >Not well at all</p>
-                        <input type="radio" name="feedback" className="valueRadio" value="1"></input>
-                        <input type="radio" name="feedback" className="valueRadio" value="2"></input>
-                        <input type="radio" name="feedback" className="valueRadio" value="3"></input>
-                        <input type="radio" name="feedback" className="valueRadio" value="4"></input>
-                        <input type="radio" name="feedback" className="valueRadio" value="5"></input>
-                        <p >Extremely well</p>
+                    <div className="inputContainer">
+                        <p>How are you feeling today?</p>
+                        <div className="scaleValue">
+                            <p >Not well at all</p>
+                            <input required type="radio" name="feedback" className="valueRadio" value="1"></input>
+                            <input required type="radio" name="feedback" className="valueRadio" value="2"></input>
+                            <input required type="radio" name="feedback" className="valueRadio" value="3"></input>
+                            <input required type="radio" name="feedback" className="valueRadio" value="4"></input>
+                            <input required type="radio" name="feedback" className="valueRadio" value="5"></input>
+                            <p >Extremely well</p>
+                        </div>
                     </div>
                     <div className="buttonBar">
-                        <button type="submit"> next</button>
+                        <button className="nextBtn" type="submit">Next</button>
                     </div>
                 </form>
             </section>
