@@ -7,6 +7,9 @@ import axios from 'axios';
 
 
 function Submit(){
+    //history
+    const history=useHistory();
+
     //get redux state
     const feedback = useSelector(store => store.feedback)
     //check for data
@@ -29,6 +32,7 @@ function Submit(){
                 console.error('POST /feedback error', err);
             });
 
+        history.push('/thankyou');
     }
 
     return(

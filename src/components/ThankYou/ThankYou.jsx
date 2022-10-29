@@ -1,18 +1,32 @@
-import { useState, useEffect } from 'react';
 import { useDispatch } from 'react-redux';
 import { useHistory } from "react-router-dom";
 
 import Header from "../Header/Header";
 
-// on submit (history.push){POST route}
+// on submit (history.push), empty redux in case of error.
 
 function ThankYou(){
-    // import useHistory
-    
+    //setup history/dispatch
+    const history=useHistory();
+    const dispatch=useDispatch();
+
+    function onSubmit(){
+        console.log('in onSubmit');
+        //reset state
+        dispatch({
+            type: 'RESET',
+            payload:{}
+        });
+
+    history.push('/');
+        
+    }
+
+
     return (
         <>
             <h1>Thank You</h1>
-            <button className="leaveNewFeedback">Leave New Feedback</button>
+            <button className="leaveNewFeedback" onClick={onSubmit}>Leave New Feedback</button>
         </>
     )
 };
