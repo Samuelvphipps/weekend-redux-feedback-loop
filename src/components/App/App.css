@@ -91,6 +91,17 @@ body {
   text-align: right;
 }
 
+.nextInactive {
+  background-color: ghostwhite;
+  font-size: 20px;
+  padding: 10px 30px;
+  border: none;
+  color:rgba(128, 128, 128, 0.54);
+  margin: 10px;
+  border-radius: 5px;
+  box-shadow: 4px 4px 13px 0px rgba(128, 128, 128, 0.54);
+}
+
 .nextBtn {
   background-color: ghostwhite;
   font-size: 20px;

@@ -21,7 +21,6 @@ npm run client
 
 > NOTE: As a baseline requirement, you must use Redux to store your data across views.
 
-[]
 
 Create a multi-part form that allows users to leave feedback for today. 
 There will be 4 views for the form parts.

@@ -1,6 +1,7 @@
 
 import { useDispatch } from 'react-redux';
 import { useHistory } from "react-router-dom";
+import { useState } from 'react';
 
 // on submit (history.push) (dispatch)
 
@@ -11,6 +12,11 @@ function PageTwo(){
 
     const dispatch=useDispatch();
     const history=useHistory();
+
+    //useState for btn conditional
+
+    const [btnVal, setBtnVal] = useState(false)
+
     //onSubmit function to capture form value and histor.push
 
     const onSubmit = (evt) => {
@@ -44,16 +50,19 @@ function PageTwo(){
                         <p>How well are you understanding the content?</p>
                         <div className="scaleValue">
                             <p >Not well at all</p>
-                            <input required type="radio" name="feedback" className="valueRadio" value="1"></input>
-                            <input required type="radio" name="feedback" className="valueRadio" value="2"></input>
-                            <input required type="radio" name="feedback" className="valueRadio" value="3"></input>
-                            <input required type="radio" name="feedback" className="valueRadio" value="4"></input>
-                            <input required type="radio" name="feedback" className="valueRadio" value="5"></input>
+                            <input onClick={()=>setBtnVal(true)} required type="radio" name="feedback" className="valueRadio" value="1"></input>
+                            <input onClick={()=>setBtnVal(true)} required type="radio" name="feedback" className="valueRadio" value="2"></input>
+                            <input onClick={()=>setBtnVal(true)} required type="radio" name="feedback" className="valueRadio" value="3"></input>
+                            <input onClick={()=>setBtnVal(true)} required type="radio" name="feedback" className="valueRadio" value="4"></input>
+                            <input onClick={()=>setBtnVal(true)} required type="radio" name="feedback" className="valueRadio" value="5"></input>
                             <p >Extremely well</p>
                         </div>
                     </div>
                     <div className="buttonBar">
-                        <button className="nextBtn" type="submit">Next</button>
+                        {/* conditional render grayed out btn */}
+                        {btnVal ? <button className="nextBtn" type="submit">Next</button>:
+                        <button className="nextInactive" type="submit">Next</button>
+                        }
                     </div>
                 </form>
             </section>
