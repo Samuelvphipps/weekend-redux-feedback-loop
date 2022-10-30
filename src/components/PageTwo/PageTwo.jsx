@@ -6,7 +6,7 @@ import { useState } from 'react';
 // on submit (history.push) (dispatch)
 
 function PageTwo(){
-    console.log('on page one: How are you feeling?');
+    // console.log('on page two');
 
     //dispatch const and history const
 
