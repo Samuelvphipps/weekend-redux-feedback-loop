@@ -61,7 +61,7 @@ function PageTwo(){
                     <div className="buttonBar">
                         {/* conditional render grayed out btn */}
                         {btnVal ? <button className="nextBtn" type="submit">Next</button>:
-                        <button className="nextInactive" type="submit">Next</button>
+                        <button className="nextInactive">Next</button>
                         }
                     </div>
                 </form>
